@@ -1,4 +1,5 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
 // Crashlytics integration is done as part of Firebase now, so it gets
 // automagically activated with google-services.json
@@ -21,7 +22,6 @@ android {
     }
 
     defaultConfig {
-        applicationId 'org.jitsi.meet'
         versionCode vcode
         versionName project.appVersion
 
